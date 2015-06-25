@@ -77,7 +77,7 @@ public class Pilot extends IRobotAdapter {
         distance += getDistance();
 
         if (distance < 1000){
-            driveDirect(100,100);
+            driveDirect(300,300);
         }
         else {
 
@@ -100,11 +100,11 @@ public class Pilot extends IRobotAdapter {
 
                 } else if (infrared == 248) {
                     dashboard.log("red");
-                    driveDirect(200, 300);
+                    driveDirect(250, 300);
 
                 } else if (infrared == 244) {
                     dashboard.log("green");
-                    driveDirect(300, 200);
+                    driveDirect(300, 250);
 
 
                 }
